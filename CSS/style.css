@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+:root{
+	--primary-color: orange;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	height: 100vh;
+	background: linear-gradient(to right, orange, white);
+	font-family: "Poppins";
+}
+
+.header{
+	height: 100px;
+	width: 50%;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 2%;
+	margin: 0 auto;
+	background: linear-gradient(to bottom, violet, orange);
+	color: wheat;
+	margin-top: 2%;
+border: 1px;}
+
+.banner{
+	background-image: url("../IMG/Logo.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100px;
+	width: 8%;
+	height: 100px;
+	border-radius: 30%;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+
+
+.product{
+	height: 1100px;
+	width: 100%;
+	background: linear-gradient(to right, orangered, darkviolet);
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-radius: 5%;
+}
+
+.menu{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 1px;
+	height: 130px;
+	background: linear-gradient(to left, orange, violet);
+	border-radius: 5px;
+}
+
+.menu_mainpage, .menu_category, .menu_login, .menu_news, .menu_contact{
+	border: 1px;
+	margin: 0 auto;
+	margin-left: 3%;
+	margin-top: 25px;
+	height: 60%;
+	width: 16%;
+	background: #272d40;
+	float: left;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.menu_contact{
+	cursor: pointer;
+	text-decoration: none;
+	color: white;	
+	background-size: 100px;
+}
+
+.menu a{
+	text-decoration: none;
+	color: white;	
+	background-size: 100px;
+}
+
+.menu p{
+	margin-top: 25px;
+}
+
+a:hover{
+	background: linear-gradient(to right, orange, violet);
+	color: whitesmoke;
+
+}
+
+.search{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2%;
+}
+
+.search_box {
+    background: #272d40;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.search_box_btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 70px;
+	height: 70px;
+	border-radius: 15px;
+	font-size: 25px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.search_box_input{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background: transparent;
+	color: white;
+	padding: 20px 100px 20px 20px;
+	font-size: 35px;
+	outline: none;
+}
+
+.search_box.open{
+	width: 400px;
+}
+
+.card{
+	margin: 120px auto;
+	width: 320px;
+	height: 400px;
+	background: #272d40;
+	padding: 20px;
+	border-radius: 15px;
+	color: white;
+	position: relative;
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.card_heart, .card_cart{
+	font-size: 25px;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	cursor: pointer;
+}
+
+
+.card_cart{
+	left: unset;
+	right: 20px;
+}
+
+.card_img{
+	width: 80%;
+	transition: 0.5s;
+	transition-delay: 0.2s;
+}
+
+.card_img img{
+	margin-top: 7%;
+	margin-left: 10%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card_title, .card_price{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	transition: 0.5s;
+	transition-delay: 0.4s;
+}
+
+.card_title{
+	color: var(--primary-color);
+	margin-top: 5%;
+}
+
+.card_size, .card_color{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.card_size span{
+	padding: 2px 5px;
+	background: white;
+	color: black;
+	border-radius: 5px;
+	margin: 0 2px;
+	cursor: pointer;
+}
+
+.card_color span{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.card_color-green{
+	background: green;
+}
+
+.card_color-red{
+	background: red;
+}
+
+.card_color-black{
+	background: black;
+}
+
+.card_action button{
+	background: var(--primary-color);
+	border: none;
+	outline: none;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 5px;
+	transition: 0.25s;
+}
+
+.menu_login:hover .menu_login_item{
+	visibility: visible;
+	opacity: 100;
+	padding: 0px;
+	background-color: #272d40;
+	border-radius: 5px;
+}
+
+.menu_login_item{
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 0.4s;
+	height: 30px;
+}
+
+.menu_category:hover .menu_category_item{
+	visibility: visible;
+	opacity: 100;
+	padding: 0px;
+	background-color: #272d40;
+	border-radius: 5px;
+}
+.menu_category_item{
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 0.4s;
+	height: 30px;
+}
+
+.card:hover .card_img{
+	transform: translateY(-80px) rotate(-20deg);
+}
+
+.card:hover .card_title, .card:hover .card_price{
+	transform: translate(-2px, -72px);
+}
+
+.card:hover .card_price{
+	transform: translate(-122px, -72px);
+}
+
+.card_size{
+	margin-top: 150px;
+}
+
+.card_action button:hover{
+	transform: scale(0.9);
+}
+
+.card_size, .card_color, .card_action{
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 0.4s;
+}
+
+.card:hover .card_size,
+.card:hover .card_color,
+.card:hover .card_action{
+	visibility: visible;
+	opacity: 100;
+}
+
+.card:hover .card_size{
+	margin-top: -30px;
+}
+
+.clear{
+	clear: both;
+}
+:root{
+	--primary-color2: #f2726a;
+}
+
+.footer{
+	background: linear-gradient(to right, violet, orange);
+	border-radius: 5%;
+}
+
+.copyright{
+	background: #242628;
+	width: 320px;
+	height: 400px;
+	border-radius: 10px;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	/* margin-bottom: 10px; */
+	color: white;
+	overflow: hidden;
+}
+
+
+img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-position: center;
+}
+
+.card_infor{
+	width: 120px;
+	height: 120px;
+	border: 4px solid var(--primary-color2);
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+	transform: translateY(25px);
+	transition: 0.5s;
+
+}
+
+.copyright h2{
+	margin-top: 35px;
+}
+
+.card_social{
+	margin: 25px 0;
+}
+
+.card_social a{
+	color: white;
+	margin: 20px 25px;
+	font-size: 20px;
+}
+
+.card_social a:hover{
+	color: #f2726a;
+	border-radius: 15px;
+}
+
+.job{
+	color: var(--primary-color2);
+}
+
+.copyright button{
+	width: 150px;
+	height: 40px;
+	border: 1px solid var(--primary-color2);
+	background: transparent;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.copyright button:hover {
+	background: #f2726a ;
+}
+
+.card_infor:hover{
+	width: 100%;
+	height: 100%;
+	border-radius: unset;
+	transform: unset;
+	border: none;
+}
+
+.invisible{
+	height: 20px;
+	width: 100%;
+	border: 1px;
+	text-align: center;
+}
+
+.news1{
+	height: 300px;
+	width: 80%;
+	background: linear-gradient(to top, violet, orange);
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	border-radius: 5%;
+	border: 1px dotted darkviolet;
+}
+
+.card_news img{
+	margin-left: 25%;
+	width: 20%;
+	height: 300px;
+	border: 1px dashed white;	
+	float: left;
+	margin-top: 0%;
+	border-radius: 10%;
+}
+
+.news_infor{
+	float: right;
+	width: 30%;
+	margin-right: 25%;
+	text-align: right;
+	color: black;
+}
+
+.news_infor a{
+	text-decoration: none;
+	color: wheat;
+}
+
+.loginform{
+	height: 100vh;
+	background: linear-gradient(to right, orangered, darkviolet);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5%;
+}
+
+.container{
+	width: 400px;
+	border: none;
+	border-radius: 10px;
+	background: white;
+	padding: 40px;
+}
+
+.container h1{
+	text-align: center;
+}
+
+.form-control{
+	width: 100%;
+	position: relative;
+	margin-top: 40px;
+}
+
+.form-control input{
+	width: 100%;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #adadad;
+}
+
+:root{
+	--success-color: #2691d9;
+	--error-color:  #e74c3c;
+}
+
+.form-control span{
+	border-bottom: 3px solid var(--success-color);
+	position: absolute;
+	left: 0;
+	top: 21px;
+	width: 0;
+	transition: 0.3s;
+}
+
+.form-control input:focus ~ span {
+	width: 100%;
+}
+
+.form-control.error small{
+	color: var(--error-color);
+}
+
+.form-control.error input{
+	border-bottom: 2px solid var(--error-color);
+}
+
+.btn-submit{
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	background: var(--success-color);
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 25px 0;
+	cursor: pointer;
+	transition: 0.3s;
+
+}
+
+.btn-submit:hover{
+	background: #08609a;
+}
+
+.signup-link{
+	text-align: center;
+
+}
+
+.signup-link a{
+	color: var(--success-color);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.signup-link a:hover{
+	text-decoration: underline;
+}
+
+#top-up {
+font-size: 3rem;
+cursor: pointer;
+position: fixed;
+z-index: 9999;
+color:#004993;
+bottom: 20px;
+right: 15px;
+display: none;
+}
+#top-up:hover {
+color: #333
+}
